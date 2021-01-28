@@ -33,84 +33,137 @@ class MyHomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            IgnorePointer(
-              ignoring:
-                  true, // Will prevent any touch event to fire, even buttons also won't fire
-              child: Container(
-                width: 300,
-                height: 200,
-                child: Column(
-                  children: [
-                    GestureDetector(
-                      child: Container(
-                        height: 40,
-                        color: Colors.cyan[500],
-                        child: Center(
-                          child: Text(
-                            "Gesture Detector",
-                            textAlign: TextAlign.center,
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              IgnorePointer(
+                ignoring:
+                    true, // Will prevent any touch event to fire, even buttons also won't fire
+                child: Container(
+                  width: 300,
+                  height: 130,
+                  child: Column(
+                    children: [
+                      GestureDetector(
+                        child: Container(
+                          height: 40,
+                          color: Colors.cyan[500],
+                          child: Center(
+                            child: Text(
+                              "Gesture Detector",
+                              textAlign: TextAlign.center,
+                            ),
                           ),
                         ),
-                      ),
-                      onTap: () {
-                        print("Gesture detector tapped");
-                      },
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Container(
-                      child: RaisedButton(
-                        child: Text("Raised Button"),
-                        onPressed: () {
-                          print("Raised button clicked");
+                        onTap: () {
+                          print("Gesture detector tapped");
                         },
                       ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            AbsorbPointer(
-              absorbing:
-                  true, // Will prevent any touch event to fire, even buttons also won't fire
-              child: Container(
-                width: 300,
-                height: 200,
-                child: Column(
-                  children: [
-                    GestureDetector(
-                      child: Container(
-                        color: Colors.cyan[500],
-                        height: 40,
-                        child: Center(
-                          child: Text("Gesture Detector"),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Container(
+                        child: RaisedButton(
+                          child: Text("Raised Button"),
+                          onPressed: () {
+                            print("Raised button clicked");
+                          },
                         ),
                       ),
-                      onTap: () {
-                        print("Gesture detector tapped");
-                      },
-                    ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    Container(
-                      child: RaisedButton(
-                        child: Text("Raised Button"),
-                        onPressed: () {
-                          print("Raised button clicked");
-                        },
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-            ),
-          ],
+              AbsorbPointer(
+                absorbing:
+                    true, // Will prevent any touch event to fire, even buttons also won't fire
+                child: Container(
+                  width: 300,
+                  height: 140,
+                  child: Column(
+                    children: [
+                      GestureDetector(
+                        child: Container(
+                          color: Colors.cyan[500],
+                          height: 40,
+                          child: Center(
+                            child: Text("Gesture Detector"),
+                          ),
+                        ),
+                        onTap: () {
+                          print("Gesture detector tapped");
+                        },
+                      ),
+                      SizedBox(
+                        height: 30,
+                      ),
+                      Container(
+                        child: RaisedButton(
+                          child: Text("Raised Button"),
+                          onPressed: () {
+                            print("Raised button clicked");
+                          },
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Center(
+                child: Container(
+                  width: 200,
+                  height: 70,
+                  color: Colors.greenAccent,
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Container(
+                      width: 30,
+                      height: 30,
+                      color: Colors.orange[100],
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Center(
+                child: Container(
+                  width: 200,
+                  height: 70,
+                  color: Colors.greenAccent,
+                  child: Align(
+                    alignment: Alignment(-1, 1),
+                    child: Container(
+                      width: 30,
+                      height: 30,
+                      color: Colors.orange[100],
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Center(
+                child: Container(
+                  width: 200,
+                  height: 70,
+                  color: Colors.greenAccent,
+                  child: Align(
+                    alignment: FractionalOffset(0.5, 0.5),
+                    child: Container(
+                      width: 30,
+                      height: 30,
+                      color: Colors.orange[100],
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

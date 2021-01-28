@@ -9,6 +9,9 @@ This widget will disable the touch functionality for it’s child widgets. Suppo
 ### Alert Dialog :
 If we want to show/tell something to user, then we can use this type of widget, which will be displayed in the center of screen with a overlay. We can even render some input forms in the content and buttons in the actions also.
 
+### Align Widget :
+
+
 --
 --
 --
