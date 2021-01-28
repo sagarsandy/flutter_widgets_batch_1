@@ -11,6 +11,7 @@ If we want to show/tell something to user, then we can use this type of widget, 
 
 ### Align Widget :
 We can align(place) or fix the position of a widget using this align widget. This widget will have a child and have a property of align. This align property can used in three different ways.
+
     1. Alignment.topCenter, Alignment.topLeft, Alignment.bottomRight, like this, we can place the child widget in 9 places inside a container.
     2. Using Alignment class, this will take x and y coordinates. This is similar to a graph with origin in the center point and x axis with values -1, 0 and 1. Also y axis with values -1, 0 and 1. So we can place the child widget wherever we want using this coordinates. If the coordinates are 0 and 0, the child widget will be placed in center place.
     3. FractionallySizedBox class, this will also take x and y coordinates and works like graph, the only difference is, this graph starting is top left corner. So to place the child widget in the center, we need to pass coordinates as 0.5 and 0.5.  If we pass 0 and 0, the child widget will be positioned in top left corner.
