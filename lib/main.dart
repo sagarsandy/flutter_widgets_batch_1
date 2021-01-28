@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Widgets Batch One',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -25,6 +26,12 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Flutter Widgets"),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.info_outline),
+            onPressed: () => _showInfoAlert(context),
+          ),
+        ],
       ),
       body: Center(
         child: Column(
@@ -108,4 +115,28 @@ class MyHomePage extends StatelessWidget {
       ),
     );
   }
+}
+
+Future<void> _showInfoAlert(context) async {
+  return showDialog<void>(
+    context: context,
+    barrierDismissible: false, // User must tap button, to dismiss alert
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: Text('Bingo..'),
+        content: Container(
+          child: Text(
+              "Hello world, this is a normal alert. User must tap the Ok button to dismiss this alert."),
+        ),
+        actions: <Widget>[
+          TextButton(
+            child: Text('Ok'),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+          ),
+        ],
+      );
+    },
+  );
 }

@@ -6,6 +6,9 @@ This widget will disable the touch functionality for it’s child widgets. Suppo
 This widget will disable the touch functionality for it’s child widgets. Suppose if we mention a column or container widget as a child to Absorb Pointer widget, then we won’t get any touch events inside that column or container, even button clicks also don’t work. We need to set ignoring property to true, to achieve this.
 ###### The difference between absorb and Ignore is, Ignore pointer is invisible to hit testing and Absorb Pointer is visible to hit testing.
 
+### Alert Dialog :
+If we want to show/tell something to user, then we can use this type of widget, which will be displayed in the center of screen with a overlay. We can even render some input forms in the content and buttons in the actions also.
+
 --
 --
 --
