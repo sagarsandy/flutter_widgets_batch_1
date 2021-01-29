@@ -23,6 +23,10 @@ If we want to keep width and height of the widget in ratio with each other, then
 ### Backdrop Filter:
 If we want to highlight a certain widget and need to blur all other, then we can use backdrop filter widget. The child of this widget will be highlighted and all other widgets rendered before this widget in the screen will be blurred, using filter property with ImageFilter.blur as class to it. This can be very useful, when we offer premium content in the blogging concept, where we can dispay the actual content with blur and can show a normal text widget as child to backdrop filter as "Unlock Now", only unlock now will be displayed. Remember all other widgets rendered in the screen will be blurred except child widget of this widget.
 
+
+### Baseline Widget:
+ This works same as align widget, but we can't place a widget anywhere we want using this. We can only place a widget using a baseline. Suppose if we have a container with height 100, then we added a child widget to it and set baseline as 50, then the widget will be positioned at 50px from the top left. Baseline means, we can place the widget in a horizantal line.
+ Baseline Widget place Shifts the child down such that the child’s baseline is baseline logical pixels below the top of this box, then sizes this box to contain the child.
 --
 --
 --
