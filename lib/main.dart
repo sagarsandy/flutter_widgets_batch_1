@@ -162,6 +162,20 @@ class MyHomePage extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 10,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: AspectRatio(
+                  // aspectRatio: 3/2, Width to height ratio, 3 parts of width and 2 parts of height.
+                  aspectRatio:
+                      1.5, // We can mention it in double also. 1.5 is nothing but 3/2
+                  child: Container(
+                    color: Colors.greenAccent,
+                  ),
+                ),
+              ),
             ],
           ),
         ),

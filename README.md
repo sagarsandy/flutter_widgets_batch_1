@@ -15,7 +15,8 @@ We can align(place) or fix the position of a widget using this align widget. Thi
     2. Using Alignment class, this will take x and y coordinates. This is similar to a graph with origin in the center point and x axis with values -1, 0 and 1. Also y axis with values -1, 0 and 1. So we can place the child widget wherever we want using this coordinates. If the coordinates are 0 and 0, the child widget will be placed in center place.
     3. FractionallySizedBox class, this will also take x and y coordinates and works like graph, the only difference is, this graph starting is top left corner. So to place the child widget in the center, we need to pass coordinates as 0.5 and 0.5.  If we pass 0 and 0, the child widget will be positioned in top left corner.
 
-
+### Aspect Ratio :
+If we want to keep width and height of the widget in ration with each other, then can mention that widget as child widget to aspect ratio widget. If the aspect ratio is 3/2 then the width is 3 parts and height is 2 parts. We can mention aspect ratio in decimal points also. Like if the aspect ratio is 1.5 then it is same as 3/2. The property for mentioning aspect ratio of both these values is aspectRatio.
 
 
 --
