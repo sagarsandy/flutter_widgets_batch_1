@@ -20,6 +20,9 @@ We can align(place) or fix the position of a widget using this align widget. Thi
 If we want to keep width and height of the widget in ratio with each other, then can mention that widget as child widget to aspect ratio widget. If the aspect ratio is 3/2 then the width is 3 parts and height is 2 parts. We can mention aspect ratio in decimal points also. Like if the aspect ratio is 1.5 then it is same as 3/2. The property for mentioning aspect ratio of both these values is aspectRatio.
 
 
+### Backdrop Filter:
+If we want to highlight a certain widget and need to blur all other, then we can use backdrop filter widget. The child of this widget will be highlighted and all other widgets rendered before this widget in the screen will be blurred, using filter property with ImageFilter.blur as class to it. This can be very useful, when we offer premium content in the blogging concept, where we can dispay the actual content with blur and can show a normal text widget as child to backdrop filter as "Unlock Now", only unlock now will be displayed. Remember all other widgets rendered in the screen will be blurred except child widget of this widget.
+
 --
 --
 --

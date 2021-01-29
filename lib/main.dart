@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -175,6 +177,47 @@ class MyHomePage extends StatelessWidget {
                     color: Colors.greenAccent,
                   ),
                 ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Stack(
+                children: [
+                  Container(
+                    width: 300,
+                    height: 200,
+                    child: Text(
+                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"),
+                  ),
+                  BackdropFilter(
+                    filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
+                    child: Positioned.fill(
+                      child: Align(
+                        alignment: Alignment.center,
+                        child: Text("Unlock now"),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              // BackdropFilter(
+              //   filter: ImageFilter.blur(
+              //     sigmaX: 2.0,
+              //     sigmaY: 3.0,
+              //   ),
+              //   child: Container(
+              //     width: 200,
+              //     height: 200,
+              //     color: Colors.black.withOpacity(0.8),
+              //   ),
+              // ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                width: 200,
+                height: 200,
+                color: Colors.orange,
               ),
             ],
           ),
