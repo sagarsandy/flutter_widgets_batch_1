@@ -27,6 +27,9 @@ If we want to highlight a certain widget and need to blur all other, then we can
 ### Baseline Widget:
 This works same as align widget, but we can't place a widget anywhere we want using this. We can only place a widget using a baseline. Suppose if we have a container with height 100, then we added a child widget to it and set baseline as 50, then the widget will be positioned at 50px from the top left. Baseline means, we can place the widget in a horizantal line.
 Baseline Widget place Shifts the child down such that the child’s baseline is baseline logical pixels below the top of this box, then sizes this box to contain the child.
+
+
+
 --
 --
 --
